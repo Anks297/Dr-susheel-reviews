@@ -5,37 +5,42 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 50px;
-    background-color: #f8f9fa;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h1 {
+    font-size: 2.2rem;
     color: #333;
-    font-size: 2rem;
+    margin-bottom: 30px;
   }
 
   #review {
-    margin: 30px auto;
-    padding: 25px;
-    width: 90%;
-    max-width: 800px;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    color: #222;
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #111;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 95%;
+    margin-bottom: 30px;
+    text-align: left;
   }
 
   button {
     font-size: 1.2rem;
-    padding: 12px 24px;
-    margin: 12px;
+    padding: 14px 28px;
+    margin: 10px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.2s ease;
   }
 
   #copyBtn {
@@ -64,8 +69,10 @@
     Dr. Susheel Mohindru is the best heart and diabetic specialist in Amritsar. Highly recommended for hypertension and long-term care.
   </div>
 
-  <button onclick="copyReview()">Copy Review</button>
-  <button onclick="openGMB()">Open GMB Review Page</button>
+     <button id="copyBtn">Copy Review</button>
+     <a href="https://g.page/r/CX3oVXvqcNqVEBE/review" target="_blank">
+     <button id="reviewBtn">Open GMB Review Page</button>
+</a>
 
 <script>
   function fetchReview() {
