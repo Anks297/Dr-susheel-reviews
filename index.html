@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dr Susheel Reviews</title>
+  <title>Dr. Susheel Reviews</title>
   <style>
-    body { font-family: sans-serif; padding: 20px; text-align: center; }
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      text-align: center;
+      background: #f9f9f9;
+    }
     #review-box {
       margin: 20px auto;
       padding: 20px;
@@ -11,32 +16,43 @@
       width: 90%;
       max-width: 600px;
       font-size: 18px;
+      background-color: #fff;
     }
     button {
       margin: 10px;
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h1>Dr. Susheel Reviews</h1>
-  <div id="review-box">Click below to get a review...</div>
-  <button onclick="getReview()">Get Review</button>
+  <h2>Copy Review & Post on GMB</h2>
+  
+  <div id="review-box">
+    Dr. Susheel Mohindru is the best heart and diabetic specialist in Amritsar. Highly recommended for hypertension and long-term care.
+  </div>
+
   <button onclick="copyReview()">Copy Review</button>
+  <button onclick="openGMB()">Open GMB Review Page</button>
 
   <script>
-    async function getReview() {
-      const res = await fetch('/get-review');
-      const data = await res.json();
-      document.getElementById('review-box').innerText = data.review;
-    }
-
     function copyReview() {
       const text = document.getElementById('review-box').innerText;
       navigator.clipboard.writeText(text).then(() => {
-        alert("Copied to clipboard!");
+        alert("Review copied to clipboard!");
       });
+    }
+
+    function openGMB() {
+      window.open("https://g.page/r/CX3oVXvqcNqVEBE/review", "_blank");
     }
   </script>
 </body>
