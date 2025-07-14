@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dr Susheel Reviews</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; text-align: center; }
+    #review-box {
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      width: 90%;
+      max-width: 600px;
+      font-size: 18px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dr. Susheel Reviews</h1>
+  <div id="review-box">Click below to get a review...</div>
+  <button onclick="getReview()">Get Review</button>
+  <button onclick="copyReview()">Copy Review</button>
+
+  <script>
+    async function getReview() {
+      const res = await fetch('/get-review');
+      const data = await res.json();
+      document.getElementById('review-box').innerText = data.review;
+    }
+
+    function copyReview() {
+      const text = document.getElementById('review-box').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
