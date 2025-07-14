@@ -43,14 +43,29 @@
   <button onclick="copyReview()">Copy Review</button>
   <button onclick="openGMB()">Open GMB Review Page</button>
 
-  <script>
-    function copyReview() {
-      const text = document.getElementById('review-box').innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        alert("Review copied to clipboard!");
+<script>
+  function fetchReview() {
+    fetch("/get-review")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("review-box").innerText = data.review;
       });
-    }
+  }
 
+  function copyReview() {
+    const text = document.getElementById("review-box").innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Review copied to clipboard!");
+    });
+  }
+
+  function openGMB() {
+    window.open("https://g.page/r/CX3oVXvqcNqVEBE/review", "_blank");
+  }
+
+  // fetch review on page load
+  window.onload = fetchReview;
+</script>
     function openGMB() {
       window.open("https://g.page/r/CX3oVXvqcNqVEBE/review", "_blank");
     }
