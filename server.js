@@ -13,11 +13,8 @@ let reviews = [
   "My mother was misdiagnosed for years until we visited Dr. Susheel Mohindru. His perfect diagnosis gave her a new life.",
   "If you want a trustworthy medicine doctor in Amritsar, Dr. Susheel Mohindru is the name to remember.",
   "He is the most experienced doctor in Amritsar for BP, diabetes, and heart care.",
-  "My father’s post-heart surgery recovery was monitored by Dr. Susheel Mohindru, and we couldn’t have asked for better care.",
-  "I’m so grateful to have found Dr. Susheel Mohindru. His treatment plan for my heart disease is working wonders.",
   "His experience and perfect diagnosis make him the best cardiologist in Amritsar.",
   "For anyone suffering from hypertension or heart problems, Dr. Susheel Mohindru is the most trusted doctor in Amritsar.",
-  "I had uncontrolled BP for years, but after visiting him, it’s finally under control.",
   "Dr. Susheel Mohindru is very caring and highly skilled in his field. The best medicine specialist in Amritsar.",
   "His perfect diagnosis prevented my condition from getting worse. Most experienced cardiologist in Amritsar.",
   "For heart and sugar problems, I recommend only Dr. Susheel Mohindru.",
@@ -31,7 +28,6 @@ let reviews = [
   "My father had chest pain and we were worried. Dr. Susheel Mohindru’s timely diagnosis saved him from a major heart issue. He is indeed the best cardiologist in Amritsar.",
   "I visited many doctors for my mother’s heart palpitations, but only Dr. Susheel Mohindru gave a proper diagnosis and effective treatment. He is the most experienced cardiologist in Amritsar.",
   "My father had a severe heart condition, and Dr. Susheel Mohindru’s expertise saved his life. His perfect diagnosis and care make him the top cardiologist in Amritsar.",
-  "For months I suffered from fatigue and palpitations. After meeting Dr. Susheel Mohindru, I finally got the right treatment. He is the best doctor in Amritsar without doubt.",
   "It’s rare to find a doctor who is both knowledgeable and humble. Dr. Susheel Mohindru is the best medicine specialist in Amritsar for a reason.",
 ];
 
